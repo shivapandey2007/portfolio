@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Portfolio</title>
 </head>
 <body>
@@ -34,21 +35,42 @@
 
 
 
+<style>
+  .purple{
+    color:rgb(134, 45, 223);
+  }
+
+  #element{
+    color:rgb(134,45,223);
+  }
 
 
+</style>
 
 
+<main>
+
+</main>
 
 <section class="text-gray-400 bg-gray-900 body-font">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">I am a Developer!
-        <br class="hidden lg:inline-block">Shiva Pandey
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Hi, My name is <span class="purple">Shiva Pandey</span>
+        <br class="hidden lg:inline-block">and I am a passionate
+        <br><span id="element"></span>
       </h1>
-      <p class="mb-8 leading-relaxed">I can do Website designing,Front-End development,UI/UX designing,JAVA,PYTHON,SQL,C++,HTML,JS,CSS and much more!!.</p>
+      
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['Web developer!', 'UI/UX designer!','Front-end developer!','Back-end developer!','Video Editor!'],
+          typeSpeed: 50,
+        });
+    </script>
+
       <div class="flex justify-center">
-        <a href="contact.html"
-            <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Hire!!</button>
+        <a href="https://github.com/shiva2954-debug"
+            <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Visit Github</button>
         </a>
         <a href="https://www.linkedin.com/in/shiva-pandey-159305360/"
             <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">About</button>
@@ -72,7 +94,7 @@
       </svg>
       <span class="ml-3 text-xl">Portfolio</span>
     </a>
-    <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2020 portfolio —
+    <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2020 All rights reserved portfolio —
       <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@Shiva Pandey</a>
     </p>
     <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
